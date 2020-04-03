@@ -21,3 +21,9 @@ steps:
 
 - script: bundle exec cucumber -p ci
   displayName: 'bundle exec cucumber -p ci'
+
+- task: DownloadBuildArtifacts@0
+  displayName: 'Download Build Artifacts'
+  inputs:
+        artifactName: Report
+        downloadPath: '$(System.DefaultWorkingDirectory)'
