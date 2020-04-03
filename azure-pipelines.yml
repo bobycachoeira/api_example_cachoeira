@@ -24,7 +24,7 @@ steps:
 
 - task: PublishTestResults@2
   inputs:
-    testResultsFiles: outputxunit.xml
+    testResultsFiles: features_report.json
     searchFolder: 'D:\a\1\s\'
   condition: succeededOrFailed()
-  displayName: 'Publish Test Results outputxunit.xml'
+  displayName: 'Publish Test Results features_report.json'
