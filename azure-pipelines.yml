@@ -29,6 +29,6 @@ steps:
 
 - task: PublishTestResults@2
   inputs:
-    testResultsFiles: $(Build.SourcesDirectory)/reports/features_report.json
+    testResultsFiles: $(Build.SourcesDirectory)/reports/TEST-*.xml
     searchFolder: '$(testFilesFolder)'
     failTaskOnFailedTests: true
