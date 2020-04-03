@@ -1,0 +1,6 @@
+source 'https://rubygems.org'
+gem 'rspec'
+gem 'httparty'
+gem 'faker'
+gem 'cucumber'
+gem 'json-schema'

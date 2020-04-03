@@ -1,0 +1,70 @@
+[
+  {
+    "uri": "features/specs/get_users.feature",
+    "id": "api-get",
+    "keyword": "Funcionalidade",
+    "name": "API GET",
+    "description": "Como usuário do Mock API\nEu quero efetuar requisições na API\nA fim de buscar uma listagem de todos os users cadastrados",
+    "line": 4,
+    "tags": [
+      {
+        "name": "@getProduct",
+        "line": 3
+      }
+    ],
+    "elements": [
+      {
+        "id": "api-get;obtendo-dados-dos-users",
+        "keyword": "Cenário",
+        "name": "Obtendo dados dos users",
+        "description": "",
+        "line": 10,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@getProduct",
+            "line": 3
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que eu tenha users cadastrados",
+            "line": 11,
+            "match": {
+              "location": "features/steps/get_users_steps.rb:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 39100
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "eu executar o get all users",
+            "line": 12,
+            "match": {
+              "location": "features/steps/get_users_steps.rb:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1064056200
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "eu devo receber o status code 200",
+            "line": 13,
+            "match": {
+              "location": "features/steps/general_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20775000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

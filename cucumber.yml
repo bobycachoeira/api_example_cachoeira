@@ -1,0 +1,15 @@
+---
+#profiles
+default: -p html_report -p env_qa
+ci: -p json_report -p env_ci
+
+##Reports Profile
+html_report: --format pretty --format html --out=reports/features_report.html
+json_report: --format progress --format json --out=reports/features_report.json
+
+pretty: --format pretty
+
+##ENV Variables
+env_ci: ENVIRONMENT=https://5d964da5a824b400141d267f.mockapi.io/api
+env_qa: ENVIRONMENT=https://5d964da5a824b400141d267f.mockapi.io/api
+
