@@ -21,3 +21,11 @@ steps:
 
 - script: bundle exec cucumber -p ci
   displayName: 'bundle exec cucumber -p ci'
+
+
+- task: PublishTestResults@2
+inputs:
+testResultsFiles: outputxunit.xml
+searchFolder: 'D:\a\1\s\'
+condition: succeededOrFailed()
+displayName: 'Publish Test Results outputxunit.xml'
