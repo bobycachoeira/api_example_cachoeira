@@ -32,5 +32,5 @@ steps:
 
 - task: CmdLine@2
   inputs:
-    script: 'ls $(Agent.BuildDirectory)/a'
+    script: 'ls $(Agent.BuildDirectory)/b'
   displayName: 'Ver pasta'
