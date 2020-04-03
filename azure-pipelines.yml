@@ -32,5 +32,5 @@ steps:
 
 - task: CmdLine@2
   inputs:
-    script: 'ls /home/vsts/work/'
+    script: 'ls $(Agent.WorkFolder)'
   displayName: 'Ver pasta'
