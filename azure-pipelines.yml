@@ -22,8 +22,9 @@ steps:
 - script: bundle exec cucumber -p ci
   displayName: 'bundle exec cucumber -p ci'
 
-- task: DownloadBuildArtifacts@0
-  displayName: 'Download Build Artifacts'
+- task: PublishTestResults@2
   inputs:
-        artifactName: reports/features_report.json
-        downloadPath: '$(System.DefaultWorkingDirectory)'
+    testResultsFiles: outputxunit.xml
+    searchFolder: 'D:\a\1\s\'
+  condition: succeededOrFailed()
+  displayName: 'Publish Test Results outputxunit.xml'
