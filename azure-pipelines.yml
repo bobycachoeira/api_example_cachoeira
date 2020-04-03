@@ -25,6 +25,6 @@ steps:
 - task: PublishTestResults@2
   inputs:
     testResultsFormat: 'JUnit' # Options: JUnit, NUnit, VSTest, xUnit, cTest, cucumber
-    testResultsFiles: $(Agent.BuildDirectory)'/reports/features_report.json'
+    testResultsFiles: $(Agent.BuildDirectory)/reports/features_report.json
     searchFolder: '$(testFilesFolder)'
     failTaskOnFailedTests: true
