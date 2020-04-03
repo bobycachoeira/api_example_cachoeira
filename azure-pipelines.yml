@@ -22,6 +22,11 @@ steps:
 - script: bundle exec cucumber -p ci
   displayName: 'bundle exec cucumber -p ci'
 
+- task: CmdLine@2
+  inputs:
+    script: 'ls $(Pipeline.Workspace)'
+  displayName: 'Ver pasta'
+
 - task: PublishTestResults@2
   inputs:
     script: 'echo Write your commands here.  ls $(Agent.BuildDirectory)'
@@ -29,8 +34,3 @@ steps:
     testResultsFiles: $(Agent.BuildDirectory)/reports/features_report.json
     searchFolder: '$(testFilesFolder)'
     failTaskOnFailedTests: true
-
-- task: CmdLine@2
-  inputs:
-    script: 'ls $(Agent.WorkFolder)'
-  displayName: 'Ver pasta'
