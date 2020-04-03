@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite failures="0" errors="0" skipped="0" tests="1" time="1.196345" name="API GET">
-<testcase classname="API GET" name="Obtendo dados dos users" time="1.196345">
+<testsuite failures="0" errors="0" skipped="0" tests="2" time="1.548985" name="API GET">
+<testcase classname="API GET" name="Obtendo dados dos users" time="0.840063">
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testcase>
+<testcase classname="API GET" name="Obtendo dados de user por id" time="0.708922">
   <system-out>
     <![CDATA[]]>
   </system-out>

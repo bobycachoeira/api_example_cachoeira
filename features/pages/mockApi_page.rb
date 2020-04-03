@@ -16,5 +16,17 @@ class Stone
     def getUsers
         self.class.get('/users', @emptyBody)
     end
+
+    def getUsersByID(idUser)
+        self.class.get('/users/'+idUser, @emptyBody)
+    end
+
+    def getCities
+        self.class.get('/city', @emptyBody)
+    end
+
+    def getCityByID(idCity)
+        self.class.get('/city/'+idCity, @emptyBody)
+    end
     
 end

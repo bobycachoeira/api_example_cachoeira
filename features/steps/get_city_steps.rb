@@ -16,15 +16,14 @@ Então("um body contendo os dados dos produto") do
     end
 end
 
-
-Dado("que eu tenha users cadastrados") do
+Dado("que eu tenha cities cadastradas") do
     
 end
   
-Quando("eu executar o get all users") do
-    @request = Stone.new(@body).getUsers
+Quando("eu executar o get all cities") do
+    @request = Stone.new(@body).getCities
 end
-
-Quando("eu executar a requisição get user by id {string}") do |idUser|
-    @request = Stone.new(@body).getUsersByID(idUser)
+  
+Quando("eu executar a requisição get cit by id {string}") do |idCity|
+    @request = Stone.new(@body).getCityByID(idCity)
 end
