@@ -24,13 +24,11 @@ steps:
 
 - task: CmdLine@2
   inputs:
-    script: 'ls $(Build.SourcesDirectory)'
+    script: 'ls $(Build.SourcesDirectory)/reports'
   displayName: 'Ver pasta'
 
 - task: PublishTestResults@2
   inputs:
-    script: 'echo Write your commands here.  ls $(Agent.BuildDirectory)'
-    testResultsFormat: 'JUnit' # Options: JUnit, NUnit, VSTest, xUnit, cTest, cucumber
     testResultsFiles: $(Build.SourcesDirectory)/reports/features_report.json
     searchFolder: '$(testFilesFolder)'
     failTaskOnFailedTests: true
