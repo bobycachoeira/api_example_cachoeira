@@ -17,4 +17,4 @@ Então eu devo receber o status code 200
 Cenário: Obtendo dados de user por id
 Dado que eu tenha users cadastrados
 Quando eu executar a requisição get cit by id "1"
-Então eu devo receber o status code 201
+Então eu devo receber o status code 200

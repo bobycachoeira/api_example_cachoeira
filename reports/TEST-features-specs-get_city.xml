@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite failures="0" errors="0" skipped="0" tests="2" time="2.149280" name="API GET CITIES">
-<testcase classname="API GET CITIES" name="Obtendo dados das cities" time="1.458032">
+<testsuite failures="1" errors="0" skipped="0" tests="2" time="1.866530" name="API GET CITIES">
+<testcase classname="API GET CITIES" name="Obtendo dados das cities" time="1.057881">
   <system-out>
     <![CDATA[]]>
   </system-out>
@@ -8,7 +8,23 @@
     <![CDATA[]]>
   </system-err>
 </testcase>
-<testcase classname="API GET CITIES" name="Obtendo dados de user por id" time="0.691248">
+<testcase classname="API GET CITIES" name="Obtendo dados de user por id" time="0.808650">
+  <failure message="failed Obtendo dados de user por id" type="failed">
+    <![CDATA[Cenário: Obtendo dados de user por id
+
+Example row: 
+
+Message:
+]]>
+    <![CDATA[
+expected: 201
+     got: 200
+
+(compared using ==)
+ (RSpec::Expectations::ExpectationNotMetError)
+./features/steps/general_steps.rb:2:in `"eu devo receber o status code {int}"'
+features/specs/get_city.feature:20:in `Então eu devo receber o status code 201']]>
+  </failure>
   <system-out>
     <![CDATA[]]>
   </system-out>
