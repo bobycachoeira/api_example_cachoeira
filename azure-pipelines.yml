@@ -24,7 +24,7 @@ steps:
 
 - task: CmdLine@2
   inputs:
-    script: 'ls $(Pipeline.Workspace)'
+    script: 'ls $(Build.SourcesDirectory)'
   displayName: 'Ver pasta'
 
 - task: PublishTestResults@2
