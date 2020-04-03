@@ -31,6 +31,6 @@ steps:
   inputs:
     script: 'echo Write your commands here.  ls $(Agent.BuildDirectory)'
     testResultsFormat: 'JUnit' # Options: JUnit, NUnit, VSTest, xUnit, cTest, cucumber
-    testResultsFiles: $(Agent.BuildDirectory)/reports/features_report.json
+    testResultsFiles: $(Build.SourcesDirectory)/reports/features_report.json
     searchFolder: '$(testFilesFolder)'
     failTaskOnFailedTests: true
