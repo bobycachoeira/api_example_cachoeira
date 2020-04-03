@@ -29,3 +29,8 @@ steps:
     testResultsFiles: $(Agent.BuildDirectory)/reports/features_report.json
     searchFolder: '$(testFilesFolder)'
     failTaskOnFailedTests: true
+
+- task: CmdLine@2
+  inputs:
+    script: 'echo ls $(Agent.BuildDirectory)'
+  displayName: 'Ver pasta'
