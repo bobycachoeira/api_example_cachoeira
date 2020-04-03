@@ -24,7 +24,7 @@ steps:
 
 - task: PublishTestResults@2
   inputs:
-    testResultsFiles: reports/features_report.json
-    searchFolder: 'D:\a\1\s\'
-  condition: succeededOrFailed()
-  displayName: 'Publish Test Results features_report.json'
+    testResultsFormat: 'JUnit' # Options: JUnit, NUnit, VSTest, xUnit, cTest, cucumber
+    testResultsFiles: 'reports/features_report.json'
+    searchFolder: '$(testFilesFolder)'
+    failTaskOnFailedTests: true
