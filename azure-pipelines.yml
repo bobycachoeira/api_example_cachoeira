@@ -32,5 +32,5 @@ steps:
 
 - task: CmdLine@2
   inputs:
-    script: 'ls $(Agent.HomeDirectory)/externals'
+    script: 'ls /home/vsts/work/_temp/'
   displayName: 'Ver pasta'
